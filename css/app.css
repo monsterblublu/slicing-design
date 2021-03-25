@@ -1,0 +1,231 @@
+.btn-primary{
+  background: #F53838;
+  border: 0;
+  padding: 13px 78px 13px 78px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+}
+
+.btn-primary:hover{
+  background: #EE1313;
+  border: 0;
+}
+
+.btn-outline-primary{
+  background: none;
+  border: 1px solid #F53838;
+  color: #F53838;
+  padding: 13px 45px 13px 45px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+}
+
+.btn-outline-primary:hover{
+  background: #EE1313;
+  border: 1px solid #F53838;
+}
+
+.btn-secondary{
+  background: none;
+  border: none;
+  color: #000000;
+  padding: 13px 45px 13px 45px;
+  margin-left : 150px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+}
+
+.btn-secondary:hover{
+  background: #EE1313;
+}
+
+.head-nav a{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+.head-page h1{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  color: #0B132A;
+}
+
+.head-page p{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  color: #4F5665;
+}
+
+
+
+.title-bold{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  color: #0B132A;
+}
+
+.p-light{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  color: #4F5665;
+}
+
+.s-16{
+  font-size: 16px;
+}
+
+.s-14{
+  font-size: 14px;
+}
+
+.info-page{
+  margin-top: 103px;
+
+}
+
+.info-page .info{
+  padding: 50px 10px 50px 10px;
+}
+
+
+.info-page .info h1{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #4F5665;
+}
+
+.info-page .info p{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #4F5665;
+}
+
+.pricing-page{
+  text-align: center;
+}
+
+@media only screen and (max-width: 991px) {
+  .btn-outline-primary, .btn-secondary{
+    margin-top: 20px;
+    margin-left: 0 !important;
+  }
+
+  .hero-features{
+    margin-left: 20px;
+    width: 300px;
+  }
+
+  .hero-features h1 .title-bold{
+    text-align: center;
+  }
+
+}
+
+article {
+    display: grid;
+    /* I'm using 440px instead of 740px as it makes it easier to view it in the Scrimba simulator additive-symbols: */
+    grid-template-columns: 1fr 1fr 10px 440px 10px 1fr 1fr;
+}
+
+article > * {
+    grid-column: 4;
+}
+
+article > figure {
+    grid-column: 1 / -1;
+    margin: 20px 0;
+}
+
+article > .aside {
+    grid-column: 5 / -1;
+}
+
+article > blockquote {
+    grid-column: 3 / span 2;
+    margin: 0px 0;
+    color: #666;
+    border-left: 3px solid black;
+    padding-left: 10px;
+}
+
+/* General styling */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+}
+
+/* Basic */
+article > * {
+    min-width: 0;
+}
+
+article > h1 {
+    font-family: Lucida Grande;
+}
+
+article > p {
+    --x-height-multiplier: 0.375;
+    --baseline-multiplier: 0.17;
+    font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+    letter-spacing: .01rem;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 1.58;
+    letter-spacing: -.003em;
+    color: rgba(0,0,0,.84);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+article > .aside {
+    font-family: Lucida Grande;
+    margin: 30px 20px;
+    color: #666;
+    font-size: 0.8em;
+}
+
+img {
+    width: 100%;
+}
+
+.line-numbers a {
+    text-decoration: none;
+    color: #000;
+    padding-right: 1em;
+}
+
+code {
+    background: #eee;
+    padding: 2px 5px;
+}
+
+pre {
+    background: #eee;
+    padding: 10px 15px;
+    overflow: auto;
+}
+
+pre > code {
+    padding: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+figure figcaption {
+    color: #666;
+    font-style: italic;
+    font-size: 0.8em;
+}
